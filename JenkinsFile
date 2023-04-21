@@ -16,7 +16,8 @@ pipeline{
     }
     stage('Initializing container'){
       steps{
-        sh 'sleep 20'
+        sh 'sleep 60'
+        sh 'echo waiting for all container services to be up'
       }
     }
     stage('Execute maven package'){
